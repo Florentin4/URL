@@ -18,7 +18,7 @@ module.exports = function(params){
 				console.log(event);
 				if(!event.bot_id && event.type == "message" && event.text != "")
 						 //self.bot.postMessageToUser('florentinb', 'Hello !!', params);
-						 //self.bot.postMessageToUser(event.user, 'Hello !!', params);
-						 self.bot.postMessage(event.user, "Hello !!", params);
+						 //self.bot.postMessage(event.user, "Hello !!", params);
+						 self.bot.postMessageToChannel(event.channel, "Hello", params);
 		}
 }
