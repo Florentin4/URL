@@ -1,4 +1,4 @@
-var SlackBot = require('slackbots');
+/*var SlackBot = require('slackbots');
 
 // create a bot
 var bot = new SlackBot({
@@ -25,3 +25,13 @@ bot.on('start', function() {
     // define private group instead of 'private_group', where bot exist
     bot.postMessageToGroup('private_group', 'meow!', params); 
 });
+*/
+
+var Bot = require('./bot.js');
+
+var bot = new Bot({
+    token: process.env.SLACK_BOT_TOKEN, // Add a bot https://my.slack.com/services/new/bot and put the token 
+    name: 'cloud_bot'
+});
+
+bot.connect();
