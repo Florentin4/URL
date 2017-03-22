@@ -20,7 +20,7 @@ module.exports = function(params){
 						 self.bot.postMessageToUser('florentinb', 'Hello !!', params);
 						 //self.bot.postMessage(event.user, "Hello !!", params);
 						 //self.bot.postMessageToChannel(event.channel, "Hello", params);
-						 console.log(self.bot.getUsers(event.user));	 
+						 console.log(self.bot.getUsers()[event.user]);	 
 				}
 		}
 }
