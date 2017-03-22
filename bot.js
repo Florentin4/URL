@@ -11,7 +11,6 @@ module.exports = function(params){
 		self.onStart = function(){
 				// Le bot est connecté
 				console.log(self.bot);
-				console.log("Le bot est connecté");
 				self.bot.postMessageToUser('florentinb', 'Bonjour florentinb !!', params);
 		}
 		self.onEvent = function(event){
