@@ -17,6 +17,7 @@ module.exports = function(params){
 				// reception d'un message
 				console.log(event);
 				if(!event.bot_id && event.type == "message" && event.text != "")
-						 self.bot.postMessageToUser('florentinb', 'Hello florentinb !!', params);
+						 //self.bot.postMessageToUser('florentinb', 'Hello !!', params);
+						 self.bot.postMessageToUser(event.user, 'Hello !!', params);
 		}
 }
